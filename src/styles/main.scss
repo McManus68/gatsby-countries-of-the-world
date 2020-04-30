@@ -1,0 +1,31 @@
+:root {
+  --first-color: #13cc8e;
+  --second-color: #1ab883;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+svg {
+  color: var(--first-color);
+  margin-bottom: 2rem;
+}
+
+table {
+  border: 1px solid #4444;
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
+  }
+}

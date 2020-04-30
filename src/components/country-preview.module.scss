@@ -1,0 +1,44 @@
+.country-preview {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+
+    .header {
+      background-color: var(--first-color);
+      transition: 0.5s;
+    }
+    table {
+      border-color: var(--first-color);
+      transition: 0.5s;
+    }
+  }
+
+  .header {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #f8f8f8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #4444;
+    border-bottom: none;
+
+    .name-container {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      .native-name {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+    }
+  }
+}

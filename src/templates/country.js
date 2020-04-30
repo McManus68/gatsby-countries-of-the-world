@@ -8,7 +8,7 @@ import MapCountry from "../components/map-country"
 
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FaArrowAltCircleLeft, FaMale } from "react-icons/fa"
 
 import { navigate } from "gatsby"
 
@@ -26,11 +26,7 @@ export default ({ data }) => {
 
       <div className={style.country + " wrapper"}>
         <div className={style.countryName}>
-          <FontAwesomeIcon
-            icon="arrow-alt-circle-left"
-            size="4x"
-            onClick={() => navigate("/")}
-          />
+          <FaArrowAltCircleLeft onClick={() => navigate("/")} />
           <h1>{country.name}</h1>
         </div>
 
@@ -170,9 +166,9 @@ export default ({ data }) => {
                 </tr>
                 <tr>
                   <th>Population</th>
-                  <td>
+                  <td className={style.middle}>
                     {country.population}
-                    <FontAwesomeIcon icon="male" />
+                    <FaMale />
                   </td>
                 </tr>
                 <tr>

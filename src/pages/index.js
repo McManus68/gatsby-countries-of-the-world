@@ -4,8 +4,6 @@ import { graphql } from "gatsby"
 import "../styles/main.scss"
 import style from "./index.module.scss"
 
-import "../components/fa"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Countries from "../components/countries"
@@ -69,50 +67,21 @@ export const pageQuery = graphql`
   query contentfulQuery {
     countries: allCountriesJson {
       nodes {
-        id
         population
         name
         alpha2Code
         alpha3Code
-        altSpellings
         area
-        borders
         callingCodes
         capital
-        cioc
         currencies {
           symbol
           code
           name
         }
-        demonym
-        flag
-        gini
-        languages {
-          nativeName
-          name
-          iso639_2
-          iso639_1
-        }
         latlng
         nativeName
-        numericCode
         region
-        subregion
-        timezones
-        topLevelDomain
-        translations {
-          br
-          pt
-          nl
-          ja
-          it
-          hr
-          fr
-          fa
-          es
-          de
-        }
       }
     }
   }

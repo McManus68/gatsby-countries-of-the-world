@@ -74,6 +74,7 @@
   margin: 2rem;
 
   svg {
+    font-size: 3rem;
     margin-right: 1rem;
     cursor: pointer;
     color: var(--first-color);
@@ -93,6 +94,10 @@
 img {
   width: 100%;
   height: auto;
+}
+
+.middle {
+  display: flex;
 }
 
 @media only screen and (max-width: 700px) {

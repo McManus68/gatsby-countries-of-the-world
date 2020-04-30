@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 
 import style from "./search-bar.module.scss"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FaSearchLocation } from "react-icons/fa"
 
 const SearchBar = ({ callback }) => {
   return (
     <div className={style.searchBar}>
-      <FontAwesomeIcon icon="search-location" size="6x" className="main-icon" />
+      <FaSearchLocation className="main-icon" />
       <input
         type="text"
         onChange={callback}

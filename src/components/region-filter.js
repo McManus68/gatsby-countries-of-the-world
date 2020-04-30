@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 
 import style from "./region-filter.module.scss"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FaGlobeAmericas } from "react-icons/fa"
 
 const RegionFilter = ({ regions, callback, selected }) => {
   return (
     <div className={style.regionFilter}>
-      <FontAwesomeIcon icon="globe-americas" size="6x" className="main-icon" />
+      <FaGlobeAmericas className="main-icon" />
       <ul>
         {regions.map((region, index) => {
           return (

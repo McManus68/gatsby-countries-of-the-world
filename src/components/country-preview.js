@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import style from "./country-preview.module.scss"
 
 import { navigate } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FaInfo, FaMale } from "react-icons/fa"
 
 const CountryPreview = ({ country }) => {
   return (
@@ -15,10 +15,7 @@ const CountryPreview = ({ country }) => {
           <span className={style.nativeName}>({country.nativeName})</span>
         </div>
 
-        <FontAwesomeIcon
-          icon="info"
-          onClick={() => navigate("/country/" + country.alpha3Code)}
-        />
+        <FaInfo onClick={() => navigate("/country/" + country.alpha3Code)} />
       </div>
       <table>
         <tbody>
@@ -45,9 +42,9 @@ const CountryPreview = ({ country }) => {
           </tr>
           <tr>
             <th>Population</th>
-            <td>
+            <td className={style.middle}>
               {country.population}
-              <FontAwesomeIcon icon="male" />
+              <FaMale />
             </td>
           </tr>
           <tr>

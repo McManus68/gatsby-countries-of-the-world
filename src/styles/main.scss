@@ -21,6 +21,7 @@ body {
 .main-icon {
   color: var(--first-color);
   margin-bottom: 2rem;
+  font-size: 5rem;
 }
 
 table {
@@ -33,10 +34,6 @@ table {
     padding: 0.5rem;
     border-top: 1px solid #ddd;
     border: 1px solid #ddd;
-  }
-
-  td svg {
-    margin-left: 5px;
   }
 }
 

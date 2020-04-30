@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react"
-import { Link, graphql } from "gatsby"
+import React, { useState } from "react"
+import { graphql } from "gatsby"
 
 import "../styles/main.scss"
+import "leaflet/dist/leaflet.css"
 import style from "./index.module.scss"
 
 import "../components/fa"
@@ -25,8 +26,6 @@ const IndexPage = ({ data }) => {
     ...new Set(data.countries.nodes.map(country => country.region)),
   ].filter(region => region !== "")
   regions.unshift("All")
-
-  console.log(regions)
 
   const handleSearch = e => {
     setSearch(e.target.value.toUpperCase())
@@ -61,8 +60,6 @@ const IndexPage = ({ data }) => {
         </div>
 
         <Countries countries={countries} />
-
-        <Link to="/page-2/">Go to page 2</Link>
       </div>
     </Layout>
   )

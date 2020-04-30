@@ -1,7 +1,7 @@
 .hero-wrapper {
   width: 100%;
   position: relative;
-  background-color: rgb(7, 7, 7);
+  background-color: var(--bg-color);
 }
 
 .hero {
@@ -10,6 +10,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 6rem 2rem;
   color: white;
+  gap: 10px;
 }
 
 .main {
@@ -23,6 +24,7 @@
 
   .count {
     color: var(--first-color);
+    font-weight: 800;
     padding-right: 5px;
   }
 }

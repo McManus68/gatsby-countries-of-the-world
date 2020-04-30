@@ -1,6 +1,11 @@
 .country-wrapper {
   width: 100%;
   background-color: black;
+
+  img {
+    border: 10px solid var(--first-color);
+    box-sizing: border-box;
+  }
 }
 
 .country {
@@ -10,8 +15,12 @@
 }
 
 .infos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "names codes"
+    "names geography"
+    "language geography"
+    "map map";
 
   .bloc {
     margin: 0 2rem;
@@ -23,19 +32,77 @@
     }
   }
 
+  .bloc-names {
+    @extend .bloc;
+    grid-area: names;
+  }
+
+  .bloc-codes {
+    @extend .bloc;
+    grid-area: codes;
+  }
+
+  .bloc-language {
+    @extend .bloc;
+    grid-area: language;
+  }
+
+  .bloc-names {
+    @extend .bloc;
+    grid-area: names;
+  }
+
+  .bloc-geography {
+    @extend .bloc;
+    grid-area: geography;
+  }
+  .bloc-map {
+    @extend .bloc;
+    grid-area: map;
+  }
+
   h2 {
     font-size: 2rem;
     color: var(--first-color);
   }
 }
 
-h1 {
-  color: var(--first-color);
-  font-size: 3.5rem;
+.country-name {
+  display: flex;
   margin: 2rem;
+
+  svg {
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--first-color);
+
+    &:hover {
+      color: var(--second-color);
+    }
+  }
+
+  h1 {
+    color: var(--first-color);
+    font-size: 3rem;
+    margin: 0;
+  }
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .infos {
+    grid-template-areas:
+      "names"
+      "codes"
+      "geography"
+      "language"
+      "map";
+  }
+
+  .bloc {
+  }
 }

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const RegionFilter = ({ regions, callback, selected }) => {
   return (
     <div className={style.regionFilter}>
-      <FontAwesomeIcon icon="globe-americas" size="6x" />
+      <FontAwesomeIcon icon="globe-americas" size="6x" className="main-icon" />
       <ul>
         {regions.map((region, index) => {
           return (

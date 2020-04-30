@@ -5,8 +5,6 @@
   margin-bottom: 1.5rem;
 
   &:hover {
-    cursor: pointer;
-
     .header {
       background-color: var(--first-color);
       transition: 0.5s;
@@ -19,6 +17,7 @@
 
   .header {
     display: flex;
+    align-items: center;
     padding: 0.5rem;
     background-color: #f8f8f8;
     border-top-left-radius: 10px;
@@ -32,12 +31,23 @@
 
       .name {
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
       }
 
       .native-name {
         font-size: 0.8rem;
         font-style: italic;
+      }
+    }
+
+    svg {
+      margin: auto 0 auto auto;
+      color: black;
+      border: 1px solid #4444;
+      padding: 10px;
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }

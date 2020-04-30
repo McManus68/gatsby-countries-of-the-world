@@ -1,10 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap);
+
 :root {
   --first-color: #13cc8e;
-  --second-color: #1ab883;
+  --second-color: #189269;
+  --bg-color: #070707;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -14,7 +18,7 @@ body {
   box-sizing: border-box;
 }
 
-svg {
+.main-icon {
   color: var(--first-color);
   margin-bottom: 2rem;
 }
@@ -29,9 +33,23 @@ table {
     border-top: 1px solid #ddd;
     border: 1px solid #ddd;
   }
+
+  td svg {
+    margin-left: 5px;
+  }
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
 }

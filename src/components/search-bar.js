@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const SearchBar = ({ callback }) => {
   return (
     <div className={style.searchBar}>
-      <FontAwesomeIcon icon="search-location" size="6x" />
+      <FontAwesomeIcon icon="search-location" size="6x" className="main-icon" />
       <input
         type="text"
         onChange={callback}

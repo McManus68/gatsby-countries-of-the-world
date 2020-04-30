@@ -1,0 +1,15 @@
+.footer {
+  height: 120px;
+  background-color: var(--bg-color);
+  color: var(--first-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--first-color);
+  }
+}

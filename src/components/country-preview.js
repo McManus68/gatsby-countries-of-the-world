@@ -3,9 +3,14 @@ import PropTypes from "prop-types"
 
 import style from "./country-preview.module.scss"
 
+import { navigate } from "gatsby"
+
 const CountryPreview = ({ country }) => {
   return (
-    <div className={style.countryPreview}>
+    <div
+      className={style.countryPreview}
+      onClick={() => navigate("/country/" + country.alpha3Code)}
+    >
       <div className={style.header}>
         <div className={style.nameContainer}>
           <span className={style.name}>{country.name}</span>
@@ -40,7 +45,7 @@ const CountryPreview = ({ country }) => {
           </tr>
           <tr>
             <th>Area</th>
-            <td>{country.area} (Km2)</td>
+            <td>{country.area} (km2)</td>
           </tr>
           <tr>
             <th>Region</th> <td>{country.region}</td>

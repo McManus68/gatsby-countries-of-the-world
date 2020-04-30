@@ -11,8 +11,13 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <div className={style.country}>
-        <img src={country.flag}></img>
+      <div class className={style.countryWrapper}>
+        <div className="wrapper">
+          <img src={country.flag}></img>
+        </div>
+      </div>
+
+      <div className={style.country + " wrapper"}>
         <h1>{country.name}</h1>
 
         <div className={style.infos}>

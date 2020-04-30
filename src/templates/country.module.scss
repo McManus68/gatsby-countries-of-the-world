@@ -1,8 +1,12 @@
+.country-wrapper {
+  width: 100%;
+  background-color: black;
+}
+
 .country {
-  max-width: 1080px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  background: white;
 }
 
 .infos {

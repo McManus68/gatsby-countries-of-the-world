@@ -27,5 +27,11 @@ table {
     text-align: left;
     padding: 0.5rem;
     border-top: 1px solid #ddd;
+    border: 1px solid #ddd;
   }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }

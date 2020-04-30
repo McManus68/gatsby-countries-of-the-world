@@ -1,0 +1,37 @@
+.country {
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+
+  .bloc {
+    margin: 0 2rem;
+    .link {
+      margin-right: 0.3rem;
+      text-decoration: none;
+      font-weight: 800;
+      color: var(--first-color);
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: var(--first-color);
+  }
+}
+
+h1 {
+  color: var(--first-color);
+  font-size: 3.5rem;
+  margin: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

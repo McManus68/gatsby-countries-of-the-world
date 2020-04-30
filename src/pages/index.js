@@ -40,26 +40,30 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
 
-      <div className={style.hero}>
-        <SearchBar callback={handleSearch} />
-        <RegionFilter
-          callback={handleSetRegion}
-          regions={regions}
-          selected={region}
-        />
+      <div className={style.heroWrapper}>
+        <div className={style.hero + " wrapper"}>
+          <SearchBar callback={handleSearch} />
+          <RegionFilter
+            callback={handleSetRegion}
+            regions={regions}
+            selected={region}
+          />
+        </div>
         <HeroParticles />
       </div>
 
-      <div className={style.results}>
-        <span>
-          <span className={style.count}>{countries.length}</span>
-          countries displayed !
-        </span>
+      <div className={style.main + " wrapper"}>
+        <div className={style.results}>
+          <span>
+            <span className={style.count}>{countries.length}</span>
+            countries displayed !
+          </span>
+        </div>
+
+        <Countries countries={countries} />
+
+        <Link to="/page-2/">Go to page 2</Link>
       </div>
-
-      <Countries countries={countries} />
-
-      <Link to="/page-2/">Go to page 2</Link>
     </Layout>
   )
 }

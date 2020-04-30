@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import "../styles/main.scss"
-import "leaflet/dist/leaflet.css"
 import style from "./index.module.scss"
 
 import "../components/fa"

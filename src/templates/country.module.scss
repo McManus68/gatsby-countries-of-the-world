@@ -23,6 +23,8 @@
     "map map";
 
   .bloc {
+    display: flex;
+    flex-direction: column;
     margin: 0 2rem;
     .link {
       margin-right: 0.3rem;
@@ -101,8 +103,5 @@ img {
       "geography"
       "language"
       "map";
-  }
-
-  .bloc {
   }
 }

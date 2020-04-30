@@ -6,6 +6,7 @@ import style from "./country.module.scss"
 
 import MapCountry from "../components/map-country"
 
+import SEO from "../components/seo"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -16,9 +17,10 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={"Details about " + country.name} />
       <div className={style.countryWrapper}>
         <div className="wrapper">
-          <img src={country.flag} alt={country.countryName}></img>
+          <img src={country.flag} alt={country.name}></img>
         </div>
       </div>
 

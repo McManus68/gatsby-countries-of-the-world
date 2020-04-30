@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `World Countries Description`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `World Countries Information`,
+    description: `Information About Countries Around The World`,
     author: `@etarrou`,
   },
   plugins: [
@@ -41,6 +41,12 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-leaflet",
+      options: {
+        linkStyles: true,
       },
     },
   ],
